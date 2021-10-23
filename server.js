@@ -3,7 +3,7 @@ const app = express()
 const PORT = process.env.PORT || 3333
 
 // serve the css as static
-app.use(express.static('search_bar'))
+app.use(express.static('home_page'))
 
 // enable req.body
 app.use(express.urlencoded({extended: true}))
