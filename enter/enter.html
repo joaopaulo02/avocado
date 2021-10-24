@@ -21,8 +21,17 @@
   </div>
 
   <div id="button">
-    <div id="button-admin"><button id="button-admin">Administrador</button></div>
-    <div id="button-user"><button id="button-user">Usuário</button></div>
+    <div id="button-admin"><button id="button-admin" onclick="adminLoginRedirect()">Administrador</button></div>
+    <div id="button-user"><button id="button-user" onclick="userLoginRedirect()">Usuário</button></div>
   </div>
+  <script>
+    function adminLoginRedirect() {
+      window.location.href = "http://localhost:3333/login-admin"
+    }
+
+    function userLoginRedirect() {
+      window.location.href = "http://localhost:3333/login-user"
+    }
+  </script>
 </body>
 </html>

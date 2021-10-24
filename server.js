@@ -30,11 +30,11 @@ app.get('/budget', (req, res) => {
   res.sendFile(__dirname + '/budget/budget.html')
 })
 
-app.get('/login_admin', (req, res) => {
+app.get('/login-admin', (req, res) => {
   res.sendFile(__dirname + '/login_admin/login_admin.html')
 })
 
-app.get('/login_user', (req, res) => {
+app.get('/login-user', (req, res) => {
   res.sendFile(__dirname + '/login_user/login_user.html')
 })
 
