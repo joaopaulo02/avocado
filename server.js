@@ -4,6 +4,9 @@ const PORT = process.env.PORT || 3333
 
 // serve the css as static
 app.use(express.static('home_page'))
+app.use(express.static('signin_school'))
+app.use(express.static('enter'))
+app.use(express.static('budget'))
 
 // enable req.body
 app.use(express.urlencoded({extended: true}))
