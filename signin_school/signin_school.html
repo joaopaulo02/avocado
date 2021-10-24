@@ -1,1 +1,36 @@
-<p>test</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar escola</title>
+  <link rel="stylesheet" type="text/css" href="home_page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+</head>
+<body style="background-image: url(https://cdn.discordapp.com/attachments/733037083941142681/901248621821952000/app-background.jpg)">
+  <div id="avocado-logo">
+    <div id="logo"><img src="https://cdn.discordapp.com/attachments/733037083941142681/901246969303957504/avocado-logo.png" alt="avocado-logo" width="40px" height="40px"></div>
+    <div id="text"><h3 id="logo-text"><strong>AVOCADO</strong></h3></div>
+  </div>
+
+  <div id="signin-school">
+    <h3>CADASTRAR ESCOLA</h3><br><br><br><br>
+  </div>
+
+  <form action="/action_page.js">
+    <label for="school-name">NOME DA ESCOLA</label>
+    <input type="text" id="school-name" name="school-name"><br><br>
+    <label for="avocado-admins">Nº DE AVOCADO ADMINS</label>
+    <input type="number" id="avocado-admins" name="avocado-admins"><br><br>
+    <p>(AVOCADO ADMIN = pessoas com acesso de administrador)</p><br><br>
+    <label for="admin-id">CRIAR ID DE AVOCADO ADMIN</label>
+    <input type="text" id="admin-id" name="admin-id"><br><br>
+    <label for="admin-password">CRIAR SENHA DE AVOCADO ADMIN</label>
+    <input type="password" id="admin-password" name="admin-password"><br><br>
+    <input type="submit" value="CADASTRAR">
+  </form>
+</body>
+</html>
