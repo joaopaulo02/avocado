@@ -21,16 +21,30 @@
   </div>
 
   <form action="/action_page.js">
-    <label for="school-name">NOME DA ESCOLA</label>
-    <input type="text" id="school-name" name="school-name"><br><br>
-    <label for="avocado-admins">Nº DE AVOCADO ADMINS</label>
-    <input type="number" id="avocado-admins" name="avocado-admins"><br><br>
-    <p>(AVOCADO ADMIN = pessoas com acesso de administrador)</p><br><br>
-    <label for="admin-id">CRIAR ID DE AVOCADO ADMIN</label>
-    <input type="text" id="admin-id" name="admin-id"><br><br>
-    <label for="admin-password">CRIAR SENHA DE AVOCADO ADMIN</label>
-    <input type="password" id="admin-password" name="admin-password"><br><br>
-    <input type="submit" value="CADASTRAR">
+    <div id="school-name">
+      <label for="school-name">NOME DA ESCOLA</label><br><br>
+      <input type="text" id="school-name" name="school-name"><br><br>
+    </div>
+
+    <div id="avocado-admins">
+      <label for="avocado-admins">Nº DE AVOCADO ADMINS</label><br><br>
+      <input type="number" id="avocado-admins" name="avocado-admins"><br><br>
+      <p>(AVOCADO ADMIN = pessoas com acesso de administrador)</p><br><br>
+    </div>
+
+    <div id="admin-id">
+      <label for="admin-id">CRIAR ID DE AVOCADO ADMIN</label><br><br>
+      <input type="text" id="admin-id" name="admin-id"><br><br>
+    </div>
+
+    <div id="admin-password">
+      <label for="admin-password">CRIAR SENHA DE AVOCADO ADMIN</label><br><br>
+      <input type="password" id="admin-password" name="admin-password"><br><br><br><br><br><br>
+    </div>
+
+    <div id="submit-button">
+      <input type="submit" value="CADASTRAR" id="submit-button">
+    </div>
   </form>
 </body>
 </html>
