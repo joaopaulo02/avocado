@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="home_page.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
 </head>
 <body style="background-image: url(https://cdn.discordapp.com/attachments/733037083941142681/901248621821952000/app-background.jpg)">
   <div id="avocado-logo">
@@ -18,15 +18,15 @@
 
   <div id="button">
     <div id="singin-button">
-      <button id="signin-school" type="button">CADASTRAR ESCOLA</button>
+      <button id="signin-school" type="button" onclick="signinSchoolRedirect()">CADASTRAR ESCOLA</button>
     </div>
 
     <div id="login-button">
-      <button id="login" type="button">ENTRAR</button>
+      <button id="login" type="button" onclick="enterRedirect()">ENTRAR</button>
     </div>
 
     <div id="budget-button">
-      <button id="budget" type="button">FAZER ORÇAMENTO</button>
+      <button id="budget" type="button" onclick="budgetRedirect()">FAZER ORÇAMENTO</button>
     </div>
   </div>
 
@@ -63,6 +63,19 @@
     <h3>CONTATO</h3>
     <p id="text-center">+99 (99) 99999-9999</p>
     <p id="text-center">Faria Lima, Edifício Jeej, sala 77</p>
-  </div> 
+  </div>
+  <script>
+    function signinSchoolRedirect() {
+      window.location.href = "http://localhost:3333/signin-school"
+    }
+
+    function enterRedirect() {
+      window.location.href = "http://localhost:3333/enter"
+    }
+
+    function budgetRedirect() {
+      window.location.href = "http://localhost:3333/budget"
+    }
+  </script>
 </body>
 </html>
