@@ -36,16 +36,10 @@
 
   <script>
     function calculate() {
-      var calculate = document.getElementById("calculate");
-      var numStudents = document.getElementById("num-students");
-      var information = document.getElementById("information");
-
-      calculate.addEventListener("click", function() {
-        var numStudentsValue = numStudents.value;
-        var budget = 4000 + (numStudentsValue * 20);
-        information.innerHTML = "<h3>ORÇAMENTO</h3><p>R$ " + budget + ",00</p>";
-      });
-  }
+      var numStudents = document.getElementById("num-students").value;
+      var result = 4000 + (numStudents * 20);
+      alert(result);
+    }
   </script>
 </body>
 </html>
