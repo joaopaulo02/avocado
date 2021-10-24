@@ -1,1 +1,51 @@
-<p>test</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular o orçamento</title>
+  <link rel="stylesheet" type="text/css" href="budget.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+</head>
+<body style="background-image: url(https://cdn.discordapp.com/attachments/733037083941142681/901248621821952000/app-background.jpg)">
+  <div id="avocado-logo">
+    <div id="logo"><img src="https://cdn.discordapp.com/attachments/733037083941142681/901246969303957504/avocado-logo.png" alt="avocado-logo" width="40px" height="40px"></div>
+    <div id="text"><h3 id="logo-text"><strong>AVOCADO</strong></h3></div>
+  </div>
+
+  <div id="budget-title">
+    <h3>ORÇAMENTO</h3><br><br><br><br>
+  </div>
+
+  <div id="num-students">
+    <label for="num-students">Nº DE ALUNOS NO ENSINO FUNDAMENTAL 2:</label><br><br>
+    <input type="number" id="num-students" name="num-students"><br><br>
+  </div>
+
+  <div id="calculate-button">
+    <button id="calculate" type="button" onclick="calculate()">CALCULAR</button>
+  </div>
+
+  <div id="information">
+    <h3>COMO FUNCIONA O CÁLCULO DO ORÇAMENTO</h3>
+    <p>R$ 4.000,00 fixos + R$ 20,00 mensais por aluno</p>
+  </div>
+
+  <script>
+    function calculate() {
+      var calculate = document.getElementById("calculate");
+      var numStudents = document.getElementById("num-students");
+      var information = document.getElementById("information");
+
+      calculate.addEventListener("click", function() {
+        var numStudentsValue = numStudents.value;
+        var budget = 4000 + (numStudentsValue * 20);
+        information.innerHTML = "<h3>ORÇAMENTO</h3><p>R$ " + budget + ",00</p>";
+      });
+  }
+  </script>
+</body>
+</html>
