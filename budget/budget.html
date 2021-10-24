@@ -20,7 +20,7 @@
     <h3>ORÇAMENTO</h3><br><br><br><br>
   </div>
 
-  <div id="num-students">
+  <div id="div-num-students">
     <label for="num-students">Nº DE ALUNOS NO ENSINO FUNDAMENTAL 2:</label><br><br>
     <input type="number" id="num-students" name="num-students"><br><br>
   </div>
@@ -37,8 +37,13 @@
   <script>
     function calculate() {
       var numStudents = document.getElementById("num-students").value;
-      var result = 4000 + (numStudents * 20);
-      alert(result);
+      var result = 4000 + (numStudents * 20 * 12);
+
+      function formatarValor(valor) {
+        return valor.toLocaleString('pt-BR')
+      }
+
+      alert(`O orçamento é de R$${formatarValor(result)},00 por ano.`);
     }
   </script>
 </body>
