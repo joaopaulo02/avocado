@@ -9,6 +9,7 @@ app.use(express.static('enter'))
 app.use(express.static('budget'))
 app.use(express.static('login_admin'))
 app.use(express.static('login_user'))
+app.use(express.static('school_signed_in'))
 
 // enable req.body
 app.use(express.urlencoded({extended: true}))
@@ -36,6 +37,10 @@ app.get('/login-admin', (req, res) => {
 
 app.get('/login-user', (req, res) => {
   res.sendFile(__dirname + '/login_user/login_user.html')
+})
+
+app.post('/school-signed-in', (req, res) => {
+  res.sendFile(__dirname + '/school_signed_in/school_signed_in.html')
 })
 
 app.listen(PORT, () => console.log(`Server running at ${PORT}`))
