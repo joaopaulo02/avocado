@@ -54,5 +54,9 @@ app.get('/choose-year', (req, res) => {
   res.sendFile(__dirname + '/choose_year/choose_year.html')
 })
 
+app.get('/choose-year2', (req, res) => {
+  res.sendFile(__dirname + '/choose_year2/choose_year2.html')
+})
+
 app.listen(PORT, () => console.log(`Server running at ${PORT}`))
 
