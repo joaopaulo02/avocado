@@ -69,5 +69,9 @@ app.get('/register-grades', (req, res) => {
   res.sendFile(__dirname + '/register_grades/register_grades.html')
 })
 
+app.post('/registered-grades', (req, res) => {
+  res.sendFile(__dirname + '/registered_grades/registered_grades.html')
+})
+
 app.listen(PORT, () => console.log(`Server running at ${PORT}`))
 
