@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nota cadastrada</title>
-  <link rel="stylesheet" type="text/css" href="school_signed_in.css">
+  <link rel="stylesheet" type="text/css" href="registered_grades.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
@@ -14,11 +14,11 @@
   <div id="msg">
     <h3>Notas cadastradas com sucesso!</h3> 
   </div>
-  <div id="button">
-    <button id="back-home-page" onclick="homePageRedirect()">Voltar para página inicial</button>
-  </div>
+  <form action="http://localhost:3333/hp-admin" method="post">
+    <input type="submit" id="submit-button" value="Voltar para página inicial">
+  </form>
   <script>
-    function homePageRedirect() {
+    function adminHomePageRedirect() {
       window.location.href = "http://localhost:3333/hp-admin"
     }
   </script>
