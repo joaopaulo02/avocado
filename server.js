@@ -11,6 +11,8 @@ app.use(express.static('login_admin'))
 app.use(express.static('login_user'))
 app.use(express.static('school_signed_in'))
 app.use(express.static('hp_admin'))
+app.use(express.static('choose_year'))
+
 
 // enable req.body
 app.use(express.urlencoded({extended: true}))
