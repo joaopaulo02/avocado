@@ -15,7 +15,12 @@
     <h3>Escola cadastrada com sucesso!</h3> 
   </div>
   <div id="button">
-    <button id="back-home-page">Voltar para página inicial</button>
+    <button id="back-home-page" onclick="homePageRedirect()">Voltar para página inicial</button>
   </div>
+  <script>
+    function homePageRedirect() {
+      window.location.href = "http://localhost:3333/"
+    }
+  </script>
 </body>
 </html>
