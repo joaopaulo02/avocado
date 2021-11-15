@@ -50,5 +50,9 @@ app.post('/hp-admin', (req, res) => {
   res.sendFile(__dirname + '/hp_admin/hp_admin.html')
 })
 
+app.get('/choose-year', (req, res) => {
+  res.sendFile(__dirname + '/choose_year/choose_year.html')
+})
+
 app.listen(PORT, () => console.log(`Server running at ${PORT}`))
 
