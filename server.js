@@ -12,6 +12,7 @@ app.use(express.static('login_user'))
 app.use(express.static('school_signed_in'))
 app.use(express.static('hp_admin'))
 app.use(express.static('choose_year'))
+app.use(express.static('ranking_admin'))
 
 
 // enable req.body
