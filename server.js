@@ -15,6 +15,8 @@ app.use(express.static('choose_year'))
 app.use(express.static('ranking_admin'))
 app.use(express.static('register_grades'))
 app.use(express.static('registered_grades'))
+app.use(express.static('signin_student'))
+
 
 
 // enable req.body
