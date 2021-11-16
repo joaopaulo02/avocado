@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluno cadastrado</title>
+  <link rel="stylesheet" type="text/css" href="student_signed_in.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+</head>
+<body style="background-image: url(https://cdn.discordapp.com/attachments/733037083941142681/901248621821952000/app-background.jpg)"> 
+  <div id="msg">
+    <h3>Aluno cadastrado com sucesso!</h3> 
+  </div>
+  <form action="http://localhost:3333/hp-admin" method="post">
+    <input type="submit" id="submit-button" value="Voltar para página inicial">
+  </form>
+  <script>
+    function adminHomePageRedirect() {
+      window.location.href = "http://localhost:3333/hp-admin"
+    }
+  </script>
+</body>
+</html>
