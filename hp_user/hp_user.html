@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuário</title>
+  <link rel="stylesheet" type="text/css" href="hp_user.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+</head>
+<body style="background-image: url(https://cdn.discordapp.com/attachments/733037083941142681/901248621821952000/app-background.jpg)">
+  <div id="avocado-logo">
+    <div id="logo"><img src="https://cdn.discordapp.com/attachments/733037083941142681/901246969303957504/avocado-logo.png" alt="avocado-logo" width="40px" height="40px"></div>
+    <div id="text"><h3 id="logo-text"><strong>AVOCADO</strong></h3></div>
+  </div>
+
+  <div id="button">
+    <div id="your-position-button">
+      <button id="your-position" type="button" onclick="youPositionRedirect()">VER SUA POSIÇÃO</button>
+    </div>
+
+    <div id="25p-button">
+      <button id="25p" type="button" onclick="rkRedirect()">VER 25% DO RANKING</button>
+    </div>
+
+  <script>
+    function youPositionRedirect() {
+      window.location.href = "http://localhost:3333/your-position"
+    }
+
+    function rkRedirect() {
+      window.location.href = "http://localhost:3333/25p-rk"
+    }
+  </script>
+</body>
+</html>
