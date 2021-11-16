@@ -83,5 +83,9 @@ app.post('/student-signed-in', (req, res) => {
   res.sendFile(__dirname + '/student_signed_in/student_signed_in.html')
 })
 
+app.post('/hp-user', (req, res) => {
+  res.sendFile(__dirname + '/hp_user/hp_user.html')
+})
+
 app.listen(PORT, () => console.log(`Server running at ${PORT}`))
 
