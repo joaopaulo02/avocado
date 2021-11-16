@@ -93,6 +93,10 @@ app.get('/your-position', (req, res) => {
   res.sendFile(__dirname + '/your_position/your_position.html')
 })
 
+app.get('/25p-rk', (req, res) => {
+  res.sendFile(__dirname + '/25p_rk/25p_rk.html')
+})
+
 // PORT
 app.listen(PORT, () => console.log(`Server running at ${PORT}`))
 
