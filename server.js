@@ -18,6 +18,7 @@ app.use(express.static('registered_grades'))
 app.use(express.static('signin_student'))
 app.use(express.static('student_signed_in'))
 app.use(express.static('hp_user'))
+app.use(express.static('your_position'))
 
 // enable req.body
 app.use(express.urlencoded({extended: true}))
