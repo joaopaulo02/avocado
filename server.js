@@ -17,9 +17,7 @@ app.use(express.static('register_grades'))
 app.use(express.static('registered_grades'))
 app.use(express.static('signin_student'))
 app.use(express.static('student_signed_in'))
-
-
-
+app.use(express.static('hp_user'))
 
 // enable req.body
 app.use(express.urlencoded({extended: true}))
